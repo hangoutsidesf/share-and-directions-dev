@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+import { isBrowser, isMobile } from 'react-device-detect';
 
 class App extends Component {
 	constructor(props) {
