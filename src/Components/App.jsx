@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { isBrowser, isMobile } from 'react-device-detect';
+import Share from './Share';
 
 class App extends Component {
 	constructor(props) {
 		super(props);
 
 		this.parkId = this.props.match.params.parkId || 'home page';
-		console.log(isBrowser);
+		console.log(window.location.href);
 	}
 	render() {
 		return (
@@ -14,6 +15,7 @@ class App extends Component {
 		    <h1>Endpoint: { this.parkId }</h1>
 		    <h1>Is mobile? { String(isMobile) }</h1>
 		    <h1>Is browser? { String(isBrowser) }</h1>
+		    <Share parkId={this.parkId} />
 		  </div>
 		);
 	}
