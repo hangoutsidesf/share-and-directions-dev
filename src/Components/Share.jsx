@@ -23,7 +23,7 @@ export default props => {
 		return <button onClick={handler}>Share</button>;
 	} else {
 		return (
-			<form action={`sms:?body=${window.location.origin}${window.location.pathname}`}>
+			<form action={`sms:;body=${window.location.origin}${window.location.pathname}`}>
 				<button>Share</button>
 			</form>
 		);
