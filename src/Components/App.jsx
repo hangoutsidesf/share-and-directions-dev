@@ -16,6 +16,7 @@ class App extends Component {
 		    <h1>Is mobile? { String(isMobile) }</h1>
 		    <h1>Is browser? { String(isBrowser) }</h1>
 		    <Share parkId={this.parkId} />
+		    <h1 className="copied"></h1>
 		  </div>
 		);
 	}

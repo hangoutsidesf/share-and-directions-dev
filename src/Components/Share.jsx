@@ -11,7 +11,9 @@ export default props => {
 			const display = document.querySelectorAll('.copied');
 			copy(url);
 
-			
+			display.forEach(node => {
+				node.textContent = 'Link copied.';
+			});
 		} else {
 			// insert mobile stuff here
 		}
