@@ -23,7 +23,7 @@ export default props => {
 		return <button onClick={handler}>Share</button>;
 	} else {
 		return (
-			<form action="#">
+			<form action="sms:">
 				<button>Share</button>
 			</form>
 		);
