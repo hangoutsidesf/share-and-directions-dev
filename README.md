@@ -1,8 +1,10 @@
-My Project
+Share and Directions Development Area
 ---
- 
-Welcome.
- 
+Live Link: https://hosf-snd-dev.herokuapp.com/
+
+This is the development site for the Share and Get Directions button to be added to each parklet modal rendered.
+
+This will be frequently updated with tests and other needed components.
  
  
 Usage
@@ -23,11 +25,3 @@ Setup
 npm install
 ```
  
- 
- 
-Compile
----
- 
-```
-npm run compile
-```
