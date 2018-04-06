@@ -4,7 +4,7 @@ import { isBrowser, isMobile } from 'react-device-detect';
 import iOS from 'is-ios';
 import urlencode from 'urlencode';
 
-const smsURL = `sms:${iOS ? '&' : ';'}body=`
+const smsURL = `sms:${iOS ? '&' : '?'}body=`
 const smsBody = `
 	${urlencode('Hey come check out this parklet! ')}
 	${window.location.origin + window.location.pathname}
