@@ -19,6 +19,7 @@
     "babel-preset-react": "^6.24.1",
     "copy-to-clipboard": "^3.0.8",
     "express": "^4.16.2",
+    "is-ios": "^1.0.0",
     "react": "^16.2.0",
     "react-device-detect": "^1.0.1",
     "react-dom": "^16.2.0",
