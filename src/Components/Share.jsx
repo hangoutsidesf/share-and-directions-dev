@@ -32,7 +32,7 @@ export default props => {
 		return <button onClick={handler}>Share</button>;
 	} else {
 		return (
-			<form action={smsHref}>
+			<form action={() => smsHref()}>
 				<button>Share</button>
 			</form>
 		);
