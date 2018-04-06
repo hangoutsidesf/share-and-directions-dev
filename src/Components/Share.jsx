@@ -2,6 +2,13 @@ import React from 'react';
 import copy from 'copy-to-clipboard';
 import { isBrowser, isMobile } from 'react-device-detect';
 import iOS from 'is-ios';
+import urlencode from 'urlencode';
+
+const smsURL = `sms:${iOS ? '&' : ';'}body=`
+const smsBody = `
+	${urlencode('Hey come check out this parklet! ')}
+	${window.location.origin + window.location.pathname}
+	`
 
 const handler = () => {
 	console.log(window.location);
@@ -24,11 +31,7 @@ export default props => {
 		return <button onClick={handler}>Share</button>;
 	} else {
 		return (
-			<form action={`
-				sms:
-				${iOS ? '&' : ';'}
-				body=${window.location.origin}${window.location.pathname}`
-			}>
+			<form action={smsURL + smsBody}>
 				<button>Share</button>
 			</form>
 		);
