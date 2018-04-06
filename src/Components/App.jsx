@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { isBrowser, isMobile } from 'react-device-detect';
+import iOS from 'is-ios';
 import Share from './Share';
 
 class App extends Component {
@@ -14,6 +15,7 @@ class App extends Component {
 		  <div>
 		    <h1>Endpoint: { this.parkId }</h1>
 		    <h1>Is mobile? { String(isMobile) }</h1>
+		    <h1>Is iOS? { String(iOS) }</h1>
 		    <h1>Is browser? { String(isBrowser) }</h1>
 		    <Share parkId={this.parkId} />
 		    <h1 className="copied"></h1>
