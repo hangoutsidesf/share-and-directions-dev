@@ -31,9 +31,7 @@ export default props => {
 		return <button onClick={handler}>Share</button>;
 	} else {
 		return (
-			<form action={smsURL + smsBody}>
-				<button>Share</button>
-			</form>
+			<a href={smsURL + smsBody}>Share</a>
 		);
 	}
 }
